@@ -1,0 +1,29 @@
+{
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Carrot Juice",
+        "precio": "1.5"
+      },
+      {
+        "id": 2,
+        "nombre": "Orange Juice",
+        "precio": "1"
+      },
+      {
+        "nombre": "Apple Juice",
+        "precio": "1.3",
+        "id": 3
+      },
+      {
+        "nombre": "Rib Eye 800g",
+        "precio": "14.9",
+        "id": 4
+      },
+      {
+        "nombre": "Anana Juice",
+        "precio": "1.3",
+        "id": 5
+      }
+    ]
+  }

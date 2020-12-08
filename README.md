@@ -1,5 +1,7 @@
 # Redux-Practice
 
+An app to practice Redux
+
 ## Technologies
 
 - React
@@ -7,3 +9,6 @@
   - react-redux
   - redux-thunk
 - Json Server
+- Rest API
+- Axios
+- Sweetalert2

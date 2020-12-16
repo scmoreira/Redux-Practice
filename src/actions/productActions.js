@@ -38,7 +38,6 @@ export function addNewProduct(product) {
         dispatch(addProduct());
 
         try {
-
             await axiosClient.post('/products', product); // API request
             dispatch(addProductSuccess(product));  // Update state
 
@@ -47,7 +46,6 @@ export function addNewProduct(product) {
                 title: 'Correct!',
                 text: 'Product added successfully'
             });
-
         } catch (error) {
             console.log(error);
             dispatch( addProductError(true) );
@@ -82,10 +80,8 @@ export function getProducts() {
         dispatch( downloadProducts() );
 
         try {
-
             const response = await axiosClient.get('/products');
             dispatch( downloadProductsSuccess(response.data) )
-            
         } catch (error) {
             console.log(error);
             dispatch(downloadProductsError());
@@ -121,7 +117,6 @@ export function deleteProduct(id) {
                 title: 'Deleted',
                 text: 'Product deleted successfully.'
             })
-
         } catch (error) {
             console.log(error);
             dispatch( deleteError() );
@@ -161,7 +156,7 @@ export function editProduct(product) {
 
         try {
             await axiosClient.put(`/products/${product.id}`, product);
-            dispatch(editSuccess());
+            dispatch(editSuccess(product));
 
         } catch (error) {
             console.log(error);

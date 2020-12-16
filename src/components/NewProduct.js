@@ -9,6 +9,7 @@ const NewProduct = ({ history }) => {
     // Component state
     const [name, setName] = useState('');
     const [price, setPrice] = useState(0);
+    const [id, setId] = useState(0);
 
     const dispatch = useDispatch();
 
@@ -33,9 +34,7 @@ const NewProduct = ({ history }) => {
         }
 
         dispatch(hideAlert());
-
-        addProduct({ name, price });
-
+        addProduct({ name, price, id });
         history.push('/');
     }
 

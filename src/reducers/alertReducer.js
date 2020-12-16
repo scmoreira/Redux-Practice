@@ -1,9 +1,9 @@
 import {
     SHOW_ALERT,
     HIDE_ALERT
-} from '../types'
+} from '../types';
 
-const initialState = { alert: null }
+const initialState = { alert: null };
 
 export default function (state = initialState, action) {
     switch (action.type) {
